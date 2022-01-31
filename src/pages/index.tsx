@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from 'src/styles/Home.module.css'
+import styled from 'styled-components'
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +13,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <Main>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -51,7 +52,7 @@ const Home: NextPage = () => {
             </p>
           </a>
         </div>
-      </main>
+      </Main>
 
       <footer className={styles.footer}>
         <a
@@ -70,3 +71,13 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+const Main = styled.main`
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
