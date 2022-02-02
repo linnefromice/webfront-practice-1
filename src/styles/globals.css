@@ -1,0 +1,33 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ref: https://qiita.com/mrpero/items/c562cf9c2493bbbfe431 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* ref: https://stackoverflow.com/questions/44543157/how-to-hide-the-google-invisible-recaptcha-badge */
+.grecaptcha-badge {
+  visibility: hidden;
+}
