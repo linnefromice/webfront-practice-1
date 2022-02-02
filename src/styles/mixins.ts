@@ -1,5 +1,8 @@
 import { css } from 'styled-components'
 
+export const pageMarginCssVar = '--page-margin'
+export const pageMarginNegativeCssVar = '--page-margin-negative'
+
 export const noScrollbar = css`
   ::-webkit-scrollbar {
     display: none;

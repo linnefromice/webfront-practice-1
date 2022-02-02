@@ -1,5 +1,9 @@
 import { createGlobalStyle } from 'styled-components'
-import { noScrollbar } from './mixins'
+import {
+  noScrollbar,
+  pageMarginCssVar,
+  pageMarginNegativeCssVar,
+} from './mixins'
 
 export const GlobalStyles = () => <Styles />
 
@@ -12,6 +16,8 @@ const Styles = createGlobalStyle`
     height: 100%;
   }
   body {
+    ${pageMarginCssVar}: max(5.6vw, 16px);
+    ${pageMarginNegativeCssVar}: calc(0px - max(5.6vw, 16px));
     min-height: 100vh;
     height: 100%;
     line-break: strict;
