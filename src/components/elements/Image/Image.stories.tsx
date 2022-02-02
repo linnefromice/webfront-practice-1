@@ -1,4 +1,4 @@
-import { VIEWPORT_ALL } from 'src/__tests__/config/storybook'
+import { VIEWPORT_ALL } from 'src/config/storybook'
 import {
   Image as ImageComponent,
   LoadingImage as LoadingImageComponent,

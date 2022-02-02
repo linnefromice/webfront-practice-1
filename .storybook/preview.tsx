@@ -1,5 +1,5 @@
 import * as NextImage from 'next/image'
-import { VIEWPORTS } from '../src/__tests__/config/storybook'
+import { VIEWPORTS } from '../src/config/storybook'
 import { globalDecorators } from './decorators'
 
 Object.defineProperty(NextImage, 'default', {
