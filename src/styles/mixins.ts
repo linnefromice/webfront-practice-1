@@ -7,3 +7,9 @@ export const noScrollbar = css`
   -ms-overflow-style: none;
   scrollbar-width: none;
 `
+
+export const absoluteFill = css`
+  position: absolute;
+  inset: 0;
+  margin: auto;
+`
